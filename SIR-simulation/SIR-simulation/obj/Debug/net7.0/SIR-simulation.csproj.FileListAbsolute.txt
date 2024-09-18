@@ -1,0 +1,14 @@
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\bin\Debug\net7.0\SIR-simulation.exe
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\bin\Debug\net7.0\SIR-simulation.deps.json
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\bin\Debug\net7.0\SIR-simulation.runtimeconfig.json
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\bin\Debug\net7.0\SIR-simulation.dll
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\bin\Debug\net7.0\SIR-simulation.pdb
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\SIR-simulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\SIR-simulation.AssemblyInfoInputs.cache
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\SIR-simulation.AssemblyInfo.cs
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\SIR-simulation.csproj.CoreCompileInputs.cache
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\SIR-simulation.dll
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\refint\SIR-simulation.dll
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\SIR-simulation.pdb
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\SIR-simulation.genruntimeconfig.cache
+C:\Users\m_ver\Desktop\Ovi\SIR-simulation\SIR-simulation\obj\Debug\net7.0\ref\SIR-simulation.dll

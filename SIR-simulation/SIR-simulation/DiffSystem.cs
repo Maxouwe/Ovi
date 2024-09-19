@@ -50,9 +50,9 @@ namespace SIR_simulation
             //by doing this we obtain the slope of each function
             //we just add the slope value to the current s(t), i(t), r(t) values to get s(t+1), i(t+1), r(t+1)
             //copy the results to this.currentValues
-            currentValues[0] = st + dSdt;
-            currentValues[1] = it + dIdt;
-            currentValues[2] = rt + dRdt;
+            currentValues[0] = Math.Max(st + dSdt, 0);
+            currentValues[1] = Math.Min(it + dIdt, 1);
+            currentValues[2] = Math.Min(rt + dRdt, 1);
 
             //we can access this.currentValues from outside every step to create graphs etc.
         }

@@ -9,27 +9,27 @@ namespace SIR_simulation
     internal class DiffSystem
     {
         //number of contacts per day
-        public float b;
+        public double b;
         //recovery rate
-        public float k;
+        public double k;
         //population size
         public int N;
         //holds the current s(t), i(t), r(t) values
-        public List<float> currentValues;
+        public List<double> currentValues;
 
         //supply capital S(0), I(0), R(0) values and population size
-        public DiffSystem(float b, float k, float SStart, float IStart, float RStart, int N)
+        public DiffSystem(double b, double k, double SStart, double IStart, double RStart, int N)
         {
             this.N = N;
             this.b = b;
             this.k = k;
 
             //calc ratios
-            float st = SStart / N;
-            float it = IStart / N;
-            float rt = RStart / N;
+            double st = SStart / N;
+            double it = IStart / N;
+            double rt = RStart / N;
 
-            currentValues = new List<float>();
+            currentValues = new List<double>();
             currentValues.Add(st);
             currentValues.Add(it);
             currentValues.Add(rt);
@@ -38,14 +38,14 @@ namespace SIR_simulation
         public void calcStep()
         {
             //we have the s(t), i(t) and r(t) values calculated from the previous step
-            float st = currentValues[0];
-            float it = currentValues[1];
-            float rt = currentValues[2];
+            double st = currentValues[0];
+            double it = currentValues[1];
+            double rt = currentValues[2];
 
             //insert the values into the equations
-            float dSdt = calcdsdt(st, it, b);
-            float dIdt = calcdidt(st, it, b, k);
-            float dRdt = calcdrdt(it, k);
+            double dSdt = calcdsdt(st, it, b);
+            double dIdt = calcdidt(st, it, b, k);
+            double dRdt = calcdrdt(it, k);
 
             //by doing this we obtain the slope of each function
             //we just add the slope value to the current s(t), i(t), r(t) values to get s(t+1), i(t+1), r(t+1)
@@ -59,19 +59,19 @@ namespace SIR_simulation
 
 
         //calculates ds/dt based on given input s(t), i(t) and b
-        private float calcdsdt(float s, float i, float b)
+        private double calcdsdt(double s, double i, double b)
         {
             return (-b) * s * i;
         }
 
         //calculates di/dt based on given input s(t), i(t), b and k
-        private float calcdidt(float s, float i, float b, float k)
+        private double calcdidt(double s, double i, double b, double k)
         {
             return b * s * i - k * i;
         }
 
         //calculates dr/dt based on given input i(t) and k
-        private float calcdrdt(float i, float k)
+        private double calcdrdt(double i, double k)
         {
             return k * i;
         }
